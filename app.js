@@ -6,7 +6,7 @@ const path = require('path');
     console.log("Servidor 3000 corriendo")
 })*/
 
-app.listen(process.env.PORT || 3000,()=>{
+app.listen(process.env.PORT || 3000,function(){
     console.log("Servidor 3000 corriendo");
 })
 
