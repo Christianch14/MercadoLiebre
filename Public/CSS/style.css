@@ -1,0 +1,346 @@
+/*CSS HEADER*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.header-main{
+    background-color: #EAC926;
+    display: block;
+}
+
+.cabecera{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 15px 0 15px;
+    align-items: center;
+}
+#logo{
+    width: 50%;
+    height: 50%;
+    display: inline;
+}
+
+.search-bar{
+    display: inline-block;
+    width: 50%;    /*ancho*/
+    height: 50%;   /*altura*/
+    text-align: center;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+#banner{
+    width: 100%;
+    height: 100%;
+}
+
+
+#buscador{
+    display: inline;
+    background-color: white;
+    height: 30px;
+    width: 30px;
+    border-radius: 20%;
+    border-color: solid black 20px;
+    text-align: center;  
+
+}
+
+#burger{
+    text-align: center;
+    color: white;
+    background-color: #1259c3;
+    height: 35px;
+    width: 40px;
+    border-radius: 10%;
+    margin: 0.2rem;
+    padding: 0.2rem; 
+}
+
+.burger-menu{
+    display: flex;
+    justify-content: center;
+
+}
+
+#menu{
+    background-color: skyblue;
+    width: 20px;
+    height: 20px;
+}
+
+#icon{
+    display: inline;
+}
+
+
+.pay-credit{
+   text-align: center;
+   font-family: Roboto;
+   display: inline;
+   justify-content: space-between;
+}
+
+.topnav{
+    margin: 5px;
+    display: flex;
+    font-size: 17px;
+    font-family: Roboto;
+    justify-content: space-between;
+} 
+
+.topnav ul{
+    list-style: none;
+    display: flex;
+}
+
+.menu li{
+    margin: 0 10px;
+}
+
+.visita{
+    font-size: 24px;
+    font-family: Roboto;
+}
+
+section#prod h2{
+    font-size: 16px;
+    font-family: Roboto;
+    text-align: left;
+    margin: 10px;
+}
+
+section.ofertas h2{
+    font-size: 16px;
+    font-family: Roboto;
+    text-align: center;
+    margin: 10px;
+}
+
+section.footer h2{
+    font-size: 16px;
+    font-family: Roboto;
+    text-align: center;
+}
+
+section.footer p{
+    font-size: 12px;
+    font-family: Roboto;
+    text-align: center;
+    height: min-content;
+    width: 100%;
+    
+}
+
+section.footer i{
+    color: #1259c3;
+    text-align: center;
+    display: block;
+  
+}
+#copy{
+    font-size: 12px;
+    font-family: Roboto;
+}
+
+
+.caja1{
+    display: block;
+    text-align: center;
+    background-color: white;
+    width: 50%;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    margin: 15px;
+    margin-top: 10px;
+}
+
+.caja1 i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+}
+
+section#prod img{
+    width: 80%;
+    border-bottom: 1px solid grey;
+}
+
+section.ofertas img{
+    width: 80%;
+    border-bottom: 1px solid grey;
+}
+
+section.caja1 i{
+    color: green;
+    display: inline;
+    text-align: left;
+    margin: 10px;
+    border-color: green;
+    border-radius: 50%;
+    order: 1;
+}
+
+main{
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: #ebebeb;
+}
+
+main .space-form{
+    display: block;
+    justify-content: start;
+    flex-direction:initial;
+    height: 80%;
+    width: 30%;
+    margin: auto;
+    border: dotted red 2px; 
+    box-sizing: border-box;
+    background-color: #ebebeb;
+}
+
+.space-form input{
+    border-radius: 10px;
+    margin: 10px;
+    display: inline;
+}
+
+.space-form label{
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    font-family: Roboto;
+}
+
+.space-form button{
+    display: inline;
+    text-align: center;
+    /*border: dotted red 2px; */
+    margin: 10px 80px 10px 80px;
+    height: auto;
+    width: auto;
+    background-color: #1259c3;
+    color: antiquewhite;
+    border-radius: 10px;
+}
+textarea{
+    border-radius: 10px;
+}
+
+main .login-form{
+    display: flex;
+    flex-direction:column;
+    height: 80%;
+    width: 30%;
+    margin: auto;
+    box-sizing: border-box;
+    background-color: #ebebeb;
+}
+
+.login-form input{
+    border-radius: 10px;
+    margin:10px 100px;
+    display: flex; 
+}
+
+.login-form label{
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    font-family: Roboto;
+    margin: auto;
+}
+
+.login-form button{
+    color: antiquewhite;
+    display:inline;
+    height: 30%;
+    width: 40%;
+    background-color: #1259c3;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.login-form button:hover{
+    background-color: #0022AA;
+}
+
+/*ancho minimo 361 mobile*/
+@media(min-width:361px){
+    /*descripcion del articulo desaparecera
+      agregar box-shadow
+    */
+    .topnav{
+        display: none;
+     }
+}
+
+/*ancho minimo 769 desktop*/
+@media(min-width:769px){
+    /*mostrar site y login navbar ocultar imagen*/
+    .topnav{
+        display: flex;
+    }
+    
+    #burger{
+        display: none;
+    }
+
+    main #prod{
+        display: flex;
+        flex-direction: row;
+    }
+
+    main .ofertas{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .caja1 .precio{
+        font-size: 18px;
+        font-family: Roboto;
+        width: 50px;
+        height: 10px;
+        margin: 10px;
+        display: inline;
+        flex-wrap: wrap;  
+    }
+    
+    .caja1 .desc{
+        font-size: 16px;
+        font-family: Roboto;
+        color: green;
+        margin: 0%;
+        display:inline;  
+    }
+
+    .footer{
+        display:flex;
+        flex-direction: row;
+        width: auto;
+        height: auto;
+        /*border: dotted red 2px;*/ 
+    }
+
+    .footer .cajaF{
+        /*border: dotted blue 2px;*/
+        margin: 50px; 
+    }
+
+    .cajaF i:hover{
+        color: #39b54a;
+    }
+    
+    .caja1 i:hover{
+        transform: rotateX(180deg);
+    }
+
+
+}
+
+
