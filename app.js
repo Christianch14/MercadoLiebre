@@ -2,8 +2,12 @@ const express = require('express');
 const app = express();
 const path = require('path');
 
-app.listen(3000, ()=>{
+/*app.listen(3000, ()=>{
     console.log("Servidor 3000 corriendo")
+})*/
+
+app.listen(process.env.PORT || 3000,()=>{
+    console.log("Servidor 3000 corriendo");
 })
 
 app.use(express.static('Public'));
